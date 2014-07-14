@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!-- Register the Package-Specific Browser Layer,
+     So That It Will Be Activated When This Product Is Installed. -->
+<layers>
+  <layer name="drchen.theme.customization.layer"
+    interface="drchen.theme.interfaces.ICustomTheme" />
+</layers>

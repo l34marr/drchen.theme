@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+  xmlns="http://namespaces.plone.org/diazo"
+  xmlns:css="http://namespaces.plone.org/diazo/css"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+<!-- Apply the Following Rules to Standard Plone Pages -->
+<rules css:if-content="#visual-portal-wrapper">
+
+  <theme href="index.html" />
+
+  <!-- Replace Title with Plone's Page Title  -->
+  <replace css:theme="html head title" css:content="html head title" />
+
+  <!-- Drop FavIcon Spec Coming from Content; Use the One in the Theme. -->
+  <drop content="/html/head/link[@rel='shortcut icon']" />
+
+  <!-- Copy Base Tag from Plone -->
+  <before css:theme-children="html head" css:content="html head base" />
+
+  <!-- Copy Link, Style, Meta Tags from Plone Head -->
+  <after css:theme-children="html head"
+         content="/html/head/link | /html/head/style | /html/head/meta" />
+
+  <!-- Merge Classes from Plone Body with Theme Body -->
+  <merge attributes="class" css:theme="body" css:content="body" />
+
+  <!-- Copy Script Tags from Plone Head to End of Body -->
+  <after css:theme-children="html body" css:content="html head script" />
+
+  <!-- Move Inline Scripts in Content to End of Body -->
+  <drop css:content="body script" />
+  <after css:theme-children="html body"
+         css:content="html body script" method="raw" />
+
+  <!-- Insert Your Own Rules Here -->
+
+  <!-- This Rule Pulls In the Whole Plone layout.
+       Replace This with Rules that Copy Particular Parts of the Content
+       Into Particular Targets in Your Theme. -->
+  <after css:theme="body p" css:content="#visual-portal-wrapper" />
+
+</rules>
+
+</rules>

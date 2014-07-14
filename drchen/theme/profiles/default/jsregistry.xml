@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!-- Setup Configuration for the portal_javascripts Tool. -->
+<object name="portal_javascripts">
+
+<!-- Javascript Elements Accept These Parameters:
+   - 'id' (required): same rules as for stylesheets (see 'cssregistry.xml').
+   - 'expression' (optional - default: ''): a TAL condition.
+   - 'inline' (optional - default: False)
+   - 'enabled' (optional - default: True): boolean
+   - 'cookable' (optional - default: True): boolean (aka 'merging allowed')
+     See registerScript() arguments in ResourceRegistries/tools/JSRegistry.py
+     for the latest list of all available keys and default values. -->
+
+<!--
+  <javascript id="++theme++drchen.theme/js/main.js"
+    cacheable="False" compression="safe" cookable="False"
+    enabled="True" expression="" inline="False" />
+ -->
+</object>
