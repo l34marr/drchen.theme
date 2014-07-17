@@ -1,0 +1,20 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  i18n_domain="drchen.theme">
+
+  <!-- Zope3 Browser Layer -->
+  <interface
+    name="DrChen Theme"
+    interface="..interfaces.IThemeSpecific"
+    type="zope.publisher.interfaces.browser.IBrowserSkinType" />
+
+  <!-- Special View -->
+  <browser:page
+    name="myview"
+    for="*"
+    class=".custom.DrChenView"
+    permission="zope.Public"
+    allowed_interface="..interfaces.IDrChenView" />
+
+</configure>
