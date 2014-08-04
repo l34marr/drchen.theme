@@ -1,12 +1,460 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Theme Template</title>
-  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+<title>MyDoctor.tw</title>
+<!--meta-->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="keywords" content="Pediatric Clinic" />
+<meta name="description" content="MyDoctor.tw Pediatric Clinic" />
+<!--style-->
+<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Volkhov:400italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/superfish.css" />
+<link rel="stylesheet" type="text/css" href="css/fancybox/jquery.fancybox.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.qtip.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.9.2.custom.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+<link rel="stylesheet" type="text/css" href="css/animations.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<link rel="shortcut icon" href="img/favicon.ico" />
+<!--js-->
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.ba-bbq.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.carouFredSel-5.6.4-packed.js"></script>
+<script type="text/javascript" src="js/jquery.sliderControl.js"></script>
+<script type="text/javascript" src="js/jquery.timeago.js"></script>
+<script type="text/javascript" src="js/jquery.hint.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.masonry.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="js/jquery.qtip.min.js"></script>
+<script type="text/javascript" src="js/jquery.blockUI.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">var _jf = _jf || [];_jf.push(['_setAppId','e0a7eb3arMDbGBCLJb5QKFVhLMupB0odqgwXKnhsEIaSk9KPgucD52MlyOseOIbydpt_g-6H0JPKGz03bHmEG2PnRgrO4TgEmUlbIRaa7ghBDEN4NEiZkvYe3fVKyfbYvgLYuuuIUxZmlnO_0k3cqG7p50ze0n9m8lpzYwfpn7IH-KCyAh0=']);_jf.push(['p','28609']);_jf.push(['_setFont','wt014','css','.wt014']);_jf.push(['_setFont','wt014','css','.justfont2']);_jf.push(['_setFont','wt014','alias','wt014']);_jf.push(['_setFont','wcl-02','css','.wcl-02']);_jf.push(['_setFont','wcl-02','css','.justfont1']);_jf.push(['_setFont','wcl-02','alias','wcl-02']);(function(f,q,c,h,e,i,r,d){var k=f._jf;if(k.constructor===Object){return}var l,t=q.getElementsByTagName("html")[0],a=function(u){for(var v in k){if(k[v][0]==u){if(false===k[v][1].call(k)){break}}}},j=/\S+/g,o=/[\t\r\n\f]/g,b=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,g="".trim,s=g&&!g.call("\uFEFF\xA0")?function(u){return u==null?"":g.call(u)}:function(u){return u==null?"":(u+"").replace(b,"")},m=function(y){var w,z,v,u,x=typeof y==="string"&&y;if(x){w=(y||"").match(j)||[];z=t[c]?(" "+t[c]+" ").replace(o," "):" ";if(z){u=0;while((v=w[u++])){if(z.indexOf(" "+v+" ")<0){z+=v+" "}}t[c]=s(z)}}},p=function(y){var w,z,v,u,x=arguments.length===0||typeof y==="string"&&y;if(x){w=(y||"").match(j)||[];z=t[c]?(" "+t[c]+" ").replace(o," "):"";if(z){u=0;while((v=w[u++])){while(z.indexOf(" "+v+" ")>=0){z=z.replace(" "+v+" "," ")}}t[c]=y?s(z):""}}},n;k.push(["_eventActived",function(){p(h);m(e)}]);k.push(["_eventInactived",function(){p(h);m(i)}]);k.addScript=n=function(u,A,w,C,E,B){E=E||function(){};B=B||function(){};var x=q.createElement("script"),z=q.getElementsByTagName("script")[0],v,y=false,D=function(){x.src="";x.onerror=x.onload=x.onreadystatechange=null;x.parentNode.removeChild(x);x=null;a("_eventInactived");B()};if(C){v=setTimeout(function(){D()},C)}x.type=A||"text/javascript";x.async=w;x.onload=x.onreadystatechange=function(G,F){if(!y&&(!x.readyState||/loaded|complete/.test(x.readyState))){y=true;if(C){clearTimeout(v)}x.src="";x.onerror=x.onload=x.onreadystatechange=null;x.parentNode.removeChild(x);x=null;if(!F){setTimeout(function(){E()},200)}}};x.onerror=function(H,G,F){if(C){clearTimeout(v)}D();return true};x.src=u;z.parentNode.insertBefore(x,z)};a("_eventPreload");m(h);n(r,"text/javascript",false,3000)})(this,this.document,"className","jf-loading","jf-active","jf-inactive","//ds.justfont.com/js/stable/v/4.2/id/124974561474");</script>
 </head>
 <body>
-
-  <p>Replace This Template With Your Own Theme</p>
-
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1452935594962963&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<div class="site_container">
+<div class="header_container">
+<div class="header clearfix">
+<div class="header_left">
+<a href="index.html" title="陳信旭小兒科診所">
+<img src="https://github.com/l34marr/drchen.theme/raw/master/drchen/theme/resources/img/logo-65x65.png" alt="Logo" />
+<span class="justfont1">陳信旭</span><span class="justfont2">小兒科診所</span>
+</a>
+</div>
+<ul class="sf-menu header_right">
+<li class="selected">
+<a href="index.html" title="首頁">
+首頁
+</a>
+</li>
+<li>
+<a href="#" title="衛教新知">
+衛教新知
+</a>
+</li>
+<li>
+<a href="#" title="專欄文章">
+專欄文章
+</a>
+</li>
+<li>
+<a href="#" title="好站連結">
+好站連結
+</a>
+</li>
+</ul>
+<div class="mobile_menu">
+ <select>
+  <option value="index.html" selected="selected">首頁</option>
+  <option value="#">衛教新知</option>
+  <option value="#">專欄文章</option>
+  <option value="#">好站連結</option>
+ </select>
+</div>
+</div>
+</div>
+<!-- slider -->
+<ul class="slider">
+<li style="background-image: url('http://raw.githubusercontent.com/l34marr/drchen.theme/master/drchen/theme/resources/img/slider1.jpg');">
+&nbsp;
+</li>
+<li style="background-image: url('http://raw.githubusercontent.com/l34marr/drchen.theme/master/drchen/theme/resources/img/slider2.jpg');">
+&nbsp;
+</li>
+<li style="background-image: url('http://raw.githubusercontent.com/l34marr/drchen.theme/master/drchen/theme/resources/img/slider3.jpg');">
+&nbsp;
+</li>
+</ul>
+<div class="page relative noborder">
+<!--<div class="top_hint">
+  Give us a call: +123 456 789 168
+</div>-->
+<!-- slider content -->
+<div class="slider_content_box clearfix">
+<div class="slider_content" style="display: block;">
+<h1 class="title">
+健康 樂活
+</h1>
+<h2 class="subtitle">
+Healthy
+</h2>
+</div>
+<div class="slider_content">
+<h1 class="title">
+親切 服務
+</h1>
+<h2 class="subtitle">
+Compassionate
+</h2>
+</div>
+<div class="slider_content">
+<h1 class="title">
+專業 技術
+</h1>
+<h2 class="subtitle">
+Professionate
+</h2>
+</div>
+</div>
+<!-- home box -->
+<ul class="home_box_container clearfix">
+<li class="home_box light_blue animated_element animation-fadeIn duration-500">
+<h2>
+<a href="#" title="看診科別項目">
+看診科別項目
+</a>
+</h2>
+<div class="news clearfix">
+<p class="text">
+小兒科、過敏氣喘、耳鼻喉治療<br>
+內科、慢性病處方簽<br>
+成人、小兒感冒 等
+</p>
+<a class="more light icon_small_arrow margin_right_white" href="#" title="更多說明">更多說明</a>
+</div>
+</li>
+<li class="home_box blue animated_element animation-slideRight duration-800 delay-250">
+<h2>
+<a href="#" title="醫師資歷">
+醫師資歷
+</a>
+</h2>
+<div class="news clearfix">
+<p class="text">
+前高雄長庚主治醫師<br>
+中華民國小兒專科醫師<br>
+中華民國兒童過敏氣喘免疫專科醫師<br>
+</p>
+<a class="more light icon_small_arrow margin_right_white" href="#" title="詳細資歷">詳細資歷</a>
+</div>
+</li>
+<li class="home_box dark_blue animated_element animation-slideRight200 duration-800 delay-500">
+<h2>
+<a href="#" title="看診時間">
+看診時間
+</a>
+</h2>
+<ul class="items_list thin dark_blue opening_hours">
+<li class="clearfix" style="padding: 2px 0; border-bottom: 0;">
+<span>
+星期一
+</span>
+<div class="value">
+早上 08:00 - 12:00
+</div>
+</li>
+<li class="clearfix" style="padding: 2px 0; border-bottom: 0;">
+<span style="margin-left: 14px">
+到
+</span>
+<div class="value">
+下午 15:30 - 18:00
+</div>
+</li>
+<li class="clearfix" style="padding: 2px 0; border-bottom: 0;">
+<span>
+星期六
+</span>
+<div class="value">
+晚上 19:00 - 21:30
+</div>
+</li>
+<li class="clearfix">
+<span>
+星期四下午 和 星期六晚上
+</span>
+<div class="value" style="color: Orange">
+休診
+</div>
+</li>
+<li class="clearfix">
+<span>
+星期日看診時間
+</span>
+<div class="value">
+早上 09:00 - 12:00
+</div>
+</li>
+</ul>
+<a class="more light icon_small_arrow margin_right_white" style="margin-top: 10px" href="#" title="詳細資訊">詳細資訊</a>
+</li>
+</ul>
+<div class="page_layout page_margin_top clearfix">
+<div class="page_left">
+<h3 class="box_header">
+最新文章
+</h3>
+<div class="columns clearfix">
+<ul class="blog column_left">
+<li class="post">
+<ul class="comment_box clearfix">
+<li class="date">
+<div class="value">七月13日</div>
+<div class="arrow_date"></div>
+</li>
+<li class="comments_number">
+2014
+</li>
+</ul>
+<div class="post_content">
+<a class="post_image" href="#" title="防曬123 保您不曬傷">
+<img src="img/sunscreen.png" alt="" />
+</a>
+<h2>
+<a href="#" title="防曬123 保您不曬傷">
+太陽好大，做好防曬喔
+</a>
+</h2>
+<p>
+防曬123 保您不曬傷
+</p>
+<div class="post_footer">
+<ul class="post_footer_details">
+<li>關鍵字:</li>
+<li>
+<a href="#" title="">
+皮膚疾患
+</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="post">
+<ul class="comment_box clearfix">
+<li class="date">
+<div class="value">七月2日</div>
+<div class="arrow_date"></div>
+</li>
+<li class="comments_number">
+2014
+</li>
+</ul>
+<div class="post_content">
+<a class="post_image" href="#" title="">
+<img src="img/exercise-biking.jpg" alt="" />
+<h2>
+<a href="#" title="">
+大家一起來運動
+</a>
+</h2>
+<p>
+當你缺乏運動，又加以不當的應酬，得文明病的機會，當然會比從前以勞動為主的農業社會來的多，當中最盛行的三高：高血壓、高血糖、高血脂，最為人所熟知。
+</p>
+<div class="post_footer">
+<ul class="post_footer_details">
+<li>關鍵字:</li>
+<li>
+<a href="#" title="">
+慢性病
+</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+<ul class="blog column_right">
+<li class="post">
+<ul class="comment_box clearfix">
+<li class="date">
+<div class="value">六月25日</div>
+<div class="arrow_date"></div>
+</li>
+<li class="comments_number">
+2014
+</li>
+</ul>
+<div class="post_content">
+<a class="post_image" href="#" title="本院設備肺功能檢測儀">
+<img src="img/exam-device.jpg" alt="" />
+</a>
+<h2>
+<a href="#" title="本院設備肺功能檢測儀">
+本院設備肺功能檢測儀
+</a>
+</h2>
+<p>
+可協助氣喘患者、慢性阻塞性肺病患者追蹤疾病嚴重程度和進展以及其對治療的反應評估。
+</p>
+<div class="post_footer">
+<ul class="post_footer_details">
+<li>關鍵字:</li>
+<li>
+<a href="#" title="">
+慢性病
+</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="post">
+<ul class="comment_box clearfix">
+<li class="date">
+<div class="value">六月11日</div>
+<div class="arrow_date"></div>
+</li>
+<li class="comments_number">
+2014
+</li>
+</ul>
+<div class="post_content">
+<a class="post_image" href="#" title="">
+<img src="img/samples/480x300/image_02.jpg" alt="" />
+</a>
+<h2>
+<a href="#" title="">
+異位性皮膚炎
+</a>
+</h2>
+<p>
+保濕不足或太過都會讓皮膚出狀況
+</p>
+<div class="post_footer">
+<ul class="post_footer_details">
+<li>關鍵字:</li>
+<li>
+<a href="#" title="">
+皮膚疾患
+</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="show_all clearfix">
+<a class="more" href="#" title="更多文章">
+更多文章 →
+</a>
+</div>
+</div>
+<div class="page_right">
+<div class="sidebar_box first">
+<h3 class="box_header slide">
+臉書專頁
+</h3>
+<div class="item_content clearfix">
+<div class="fb-activity" data-app-id="mydoctor-tw" data-site="mydoctor.tw" data-action="likes, recommends" data-width="330px" data-colorscheme="light" data-header="true"></div>
+<div class="fb-like" data-href="http://www.facebook.com/pages/%E9%99%B3%E4%BF%A1%E6%97%AD%E5%B0%8F%E5%85%92%E7%A7%91%E8%A8%BA%E6%89%80/228180197202123" data-width="330px" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+</div>
+</div>
+<div class="sidebar_box">
+<h3 class="box_header">
+交通位置
+</h3>
+<p class="info">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3681.7547245152823!2d120.30700360000002!3d22.662931800000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e0503622e9985%3A0x4479a27675b130d2!2zODEz6auY6ZuE5biC5bem54ef5Y2A5piO6I-v5LiA6LevMTU26Jmf!5e0!3m2!1szh-TW!2stw!4v1405125728447" width="330" height="300" frameborder="0" style="border:0"></iframe>
+</p>
+<ul class="contact_data">
+<li class="clearfix">
+<span class="social_icon phone"></span>
+<p class="value">
+電話: <strong>07-5590256</strong>
+</p>
+</li>
+<li class="clearfix">
+<span class="social_icon form"></span>
+<p class="value">
+地址: <strong>高雄市左營區明華一路 156 號</strong>
+</p>
+</li>
+<li class="clearfix">
+<span class="social_icon dribble"></span>
+<p class="value">
+網址: <strong><a href="http://mydoctor.tw/">http://mydoctor.tw/</a></strong>
+</p>
+</li>
+<li class="clearfix">
+<span class="social_icon facebook"></span>
+<p class="value">
+專頁: <strong><a href="http://www.facebook.com/mydoctor.tw">http://www.facebook.com/mydoctor.tw</a></strong>
+</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="footer_container">
+<div class="footer">
+<ul class="footer_banner_box_container clearfix">
+<li class="footer_banner_box super_light_blue animated_element animation-fadeIn duration-500">
+<h2>
+過敏專欄
+</h2>
+<p>
+<a class="icon_small_arrow right_white" href="http://mydoctor.tw/search?advanced_search=True&SearchableText=&Subject%3Alist=%E6%B8%9B%E6%95%8F%E6%B2%BB%E7%99%82&Subject_usage%3Aignore_empty=operator%3Aand&pt_toggle=%23&portal_type%3Alist=Document&portal_type%3Alist=File&portal_type%3Alist=Folder&portal_type%3Alist=Image&portal_type%3Alist=News+Item&created%3Alist%3Adate=1970%2F02%2F01&created_usage=range%3Amin&Creator=&sort_on=&b_size%3Aint=30&submit=%E6%90%9C%E5%B0%8B">認識過敏原因，抗敏更輕鬆...</a>
+</p>
+</li>
+<li class="footer_banner_box light_blue animated_element animation-slideRight duration-800 delay-250">
+<h2>
+疫苗與健檢
+</h2>
+<p>
+<a class="icon_small_arrow right_white" href="#">預防勝於治療...</a>
+</p>
+</li>
+<li class="footer_banner_box blue animated_element animation-slideRight200 duration-800 delay-500">
+<h2>
+設備介紹
+</h2>
+<p>
+<a class="icon_small_arrow right_white" href="#">疫苗恆溫控制和檢測儀...</a>
+</p>
+</li>
+</ul>
+<div class="copyright_area clearfix">
+<div class="copyright_left">
+© Copyright - 陳信旭小兒科診所
+</div>
+<div class="copyright_right">
+<a class="scroll_top icon_small_arrow top_white" href="#top" title="Scroll to top">Top</a>
+</div>
+</div>
+</div>
+</div>
+</div>
 </body>
 </html>
