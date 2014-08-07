@@ -8,6 +8,9 @@
 <rules css:if-content="#visual-portal-wrapper">
 
   <theme href="index.html" />
+  <notheme if-path="info" />
+  <notheme if-path="article" />
+  <notheme if-path="about" />
 
   <!-- Replace Title with Plone's Page Title  -->
   <replace css:theme="html head title" css:content="html head title" />
@@ -18,14 +21,15 @@
   <!-- Copy Base Tag from Plone -->
   <before css:theme-children="html head" css:content="html head base" />
 
-  <!-- Copy Link, Style, Meta Tags from Plone Head -->
+  <!-- Copy Meta Tags from Plone Head, Same Way Can Apply to Link and Style -->
   <after css:theme-children="html head"
-         content="/html/head/link | /html/head/style | /html/head/meta" />
+         content="html/head/meta" />
 
   <!-- Merge Classes from Plone Body with Theme Body -->
   <merge attributes="class" css:theme="body" css:content="body" />
 
   <!-- Copy Script Tags from Plone Head to End of Body -->
+  <drop content="/html/head/script[1]" />
   <after css:theme-children="html body" css:content="html head script" />
 
   <!-- Move Inline Scripts in Content to End of Body -->
@@ -35,10 +39,9 @@
 
   <!-- Insert Your Own Rules Here -->
 
-  <!-- This Rule Pulls In the Whole Plone layout.
-       Replace This with Rules that Copy Particular Parts of the Content
-       Into Particular Targets in Your Theme. -->
-  <after css:theme="body p" css:content="#visual-portal-wrapper" />
+  <copy attributes="href"
+           theme="/html/body/div[2]/div[1]/div/div[1]/a"
+         content="//*[@id='portal-logo']" />
 
 </rules>
 
