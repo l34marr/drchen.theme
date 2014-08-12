@@ -9,6 +9,7 @@
 }
 /* logo font */
 .justfont1, .justfont2 {
+  font-family: "微軟正黑體", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 180%;
 }
 @media screen and (max-width:1009px)
