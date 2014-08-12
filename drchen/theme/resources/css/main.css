@@ -1,5 +1,19 @@
 /* Stylesheet for the 'ICustomTheme' Plone Browser Layer */
 
-body {
-  background-color: pink;
+/* theme:.site_container = content:.visual-portal-wrapper */
+.visual-portal-wrapper {
+  max-width: 1590px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F8F8F8;
+}
+/* logo font */
+.justfont1, .justfont2 {
+  font-size: 180%;
+}
+@media screen and (max-width:1009px)
+{
+.justfont1, .justfont2 {
+  font-size: 120%;
+}
 }

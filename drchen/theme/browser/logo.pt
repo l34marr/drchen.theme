@@ -1,0 +1,11 @@
+<a id="portal-logo"
+ title="Home"
+ accesskey="1"
+ tal:attributes="href view/navigation_root_url;
+                 title view/navigation_root_title"
+ i18n:domain="plone"
+ i18n:attributes="title">
+<img src="++theme++drchen.theme/img/logo-65x65.png" alt="logo" />
+<span class="justfont1">陳信旭</span>
+<span class="justfont2">小兒科診所</span>
+</a>
