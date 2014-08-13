@@ -7,9 +7,9 @@
 <!-- Apply the Following Rules to Standard Plone Pages -->
 <rules css:if-content="#visual-portal-wrapper">
 
+  <theme href="blog.html" if-path="info" />
+  <theme href="blog.html" if-path="article" />
   <theme href="index.html" />
-  <notheme if-path="info" />
-  <notheme if-path="article" />
   <notheme if-path="about" />
 
   <!-- Replace Title with Plone's Page Title  -->
@@ -42,6 +42,14 @@
   <copy attributes="href"
            theme="/html/body/div[2]/div[1]/div/div[1]/a"
          content="//*[@id='portal-logo']" />
+  <replace theme="/html/body/div[2]/div[1]/div/ul/li[1]/a"
+         content="//*[@id='portaltab-index_html']/a" />
+  <replace theme="/html/body/div[2]/div[1]/div/ul/li[2]/a"
+         content="//*[@id='portaltab-info']/a" />
+  <replace theme="/html/body/div[2]/div[1]/div/ul/li[3]/a"
+         content="//*[@id='portaltab-article']/a" />
+  <replace theme="/html/body/div[2]/div[1]/div/ul/li[4]/a"
+         content="//*[@id='portaltab-about']/a" />
 
 </rules>
 
