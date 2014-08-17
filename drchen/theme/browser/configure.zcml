@@ -25,4 +25,12 @@
     permission="zope2.View"
     layer="..interfaces.IThemeSpecific" />
 
+  <browser:page
+    name="column_view"
+    for="plone.app.contenttypes.interfaces.ICollection"
+    class="plone.app.contenttypes.browser.collection.CollectionView"
+    template="column_view.pt"
+    permission="zope2.View"
+    layer="..interfaces.IThemeSpecific" />
+
 </configure>
