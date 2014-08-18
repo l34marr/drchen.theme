@@ -24,9 +24,10 @@
   <metal:listingmacro define-macro="listing">
   <div class="columns clearfix"
    tal:define="b_start python:request.get('b_start', 0);
+               b_size python:request.get('b_size', context.item_count);
                batch python:view.results(b_start=b_start);
-               column_left python:view.results(b_start=0,b_size=2);
-               column_right python:view.results(b_start=2,b_size=2);
+               column_left python:view.results(b_start=b_start,b_size=b_size/2);
+               column_right python:view.results(b_start=b_start+b_size/2,b_size=b_size/2);
                prop context/portal_properties/site_properties;
                normalizeStr nocall: context/plone_utils/normalizeString;
                localTime nocall: context/@@plone/toLocalizedTime;
