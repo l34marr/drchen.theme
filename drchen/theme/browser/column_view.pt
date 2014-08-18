@@ -115,7 +115,13 @@
         </ul>
 
         <div class="post_content summary">
-          <img tal:replace="structure item_icon" />
+          <a href="#"
+           tal:condition="item/image_caption"
+           tal:attributes="href python:item_type in u_v_a and item_url+'/view' or item_url;
+                           class string:post_image">
+           <img src="#"
+            tal:attributes="src item/image_caption" />
+          </a>
           <h2>
           <a href="#"
            tal:attributes="href python:item_type in u_v_a and item_url+'/view' or item_url;
@@ -219,7 +225,13 @@
         </ul>
 
         <div class="post_content summary">
-          <img tal:replace="structure item_icon" />
+          <a href="#"
+           tal:condition="item/image_caption"
+           tal:attributes="href python:item_type in u_v_a and item_url+'/view' or item_url;
+                           class string:post_image">
+           <img src="#"
+            tal:attributes="src item/image_caption" />
+          </a>
           <h2>
           <a href="#"
            tal:attributes="href python:item_type in u_v_a and item_url+'/view' or item_url;
