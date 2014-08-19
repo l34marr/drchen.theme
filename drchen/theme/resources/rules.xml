@@ -48,6 +48,9 @@
          css:content-children="div#content h1.documentFirstHeading" />
   <replace css:theme="div.columns"
          css:content="div.columns" />
+  <replace css:theme-children="ul.pagination"
+         css:content-children="div.listingBar" />
+  <drop css:content="div.listingBar" />
 
 </rules>
 
