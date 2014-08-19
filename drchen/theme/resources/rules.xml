@@ -8,9 +8,9 @@
 <rules css:if-content="#visual-portal-wrapper">
 
   <theme href="blog.html" if-path="info" />
-  <theme href="blog.html" if-path="article" />
+  <theme href="article.html" if-path="article" />
+  <theme href="about.html" if-path="about" />
   <theme href="index.html" />
-  <notheme if-path="about" />
 
   <!-- Replace Title with Plone's Page Title  -->
   <replace css:theme="html head title" css:content="html head title" />
