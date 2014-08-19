@@ -33,4 +33,12 @@
     permission="zope2.View"
     layer="..interfaces.IThemeSpecific" />
 
+  <browser:page
+    name="batchnavigation"
+    for="*"
+    class="plone.batching.browser.PloneBatchView"
+    template="batchnavigation.pt"
+    permission="zope.Public"
+    layer="..interfaces.IThemeSpecific" />
+
 </configure>
