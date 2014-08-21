@@ -1,0 +1,15 @@
+<div i18n:domain="plone"
+ id="portal-footer">
+
+<div class="fb-comments"
+ tal:condition="python: context.portal_type == 'News Item'"
+ tal:attributes="data-href context/@@plone_context_state/object_url;
+                 data-numposts string:5;
+                 data-colorscheme string:light"></div>
+
+<p align="center">
+地址: 高雄市左營區明華一路156號 電話: 07-5590256
+<font color="red">本網站內容未經允許，請勿轉載，複製或做商業用途</font>
+</p>
+
+</div>
