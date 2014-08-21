@@ -28,15 +28,6 @@
   <!-- Merge Classes from Plone Body with Theme Body -->
   <merge attributes="class" css:theme="body" css:content="body" />
 
-  <!-- Copy Script Tags from Plone Head to End of Body -->
-  <drop content="/html/head/script[1]" />
-  <after css:theme-children="html body" css:content="html head script" />
-
-  <!-- Move Inline Scripts in Content to End of Body -->
-  <drop css:content="body script" />
-  <after css:theme-children="html body"
-         css:content="html body script" method="raw" />
-
   <!-- Insert Your Own Rules Here -->
 
   <copy attributes="href"
