@@ -37,7 +37,7 @@
          content-children="//*[@id='portal-globalnav']" />
   <replace css:theme-children="div.page_left h3.box_header"
          css:content-children="div#content h1.documentFirstHeading" />
-  <replace css:theme="div.columns"
+  <replace css:theme="div.page_left div.columns"
          css:content="div.columns" />
   <replace css:theme-children="ul.pagination"
          css:content-children="div.listingBar" />
