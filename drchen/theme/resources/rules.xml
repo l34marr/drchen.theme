@@ -7,6 +7,7 @@
 <!-- Apply the Following Rules to Standard Plone Pages -->
 <rules css:if-content="#visual-portal-wrapper">
 
+  <theme href="post.html" css:if-content="body.portaltype-news-item" />
   <theme href="info.html" if-path="info" />
   <theme href="article.html" if-path="article" />
   <theme href="about.html" if-path="about" />
