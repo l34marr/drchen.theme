@@ -36,7 +36,7 @@
          content="//*[@id='portal-logo']" />
   <replace theme-children="/html/body/div[2]/div[1]/div/ul"
          content-children="//*[@id='portal-globalnav']" />
-  <replace css:theme-children="div.page_left h3.box_header"
+  <replace theme-children="/html/body/div[2]/div[2]/div/div[2]/h3[1]"
          css:content-children="div#content h1.documentFirstHeading" />
   <replace css:theme="div.page_left div.columns"
          css:content="div.columns" />
