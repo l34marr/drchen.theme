@@ -45,6 +45,8 @@
   <drop css:content="div.listingBar" />
   <replace css:theme-children="div.page_left div.post_content"
          css:content-children="body.portaltype-news-item div#content-core" />
+  <replace css:theme="div.fb-comments"
+         css:content="div.fb-comments" />
 
 </rules>
 
