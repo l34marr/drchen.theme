@@ -49,4 +49,12 @@
     permission="zope.Public"
     layer="..interfaces.IThemeSpecific" />
 
+  <browser:page
+    name="search"
+    for="*"
+    class="plone.app.search.browser.Search"
+    template="search.pt"
+    permission="zope2.View"
+    layer="..interfaces.IThemeSpecific" />
+
 </configure>
