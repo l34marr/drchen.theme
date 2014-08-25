@@ -7,6 +7,7 @@
 <!-- Apply the Following Rules to Standard Plone Pages -->
 <rules css:if-content="#visual-portal-wrapper">
 
+  <theme href="search.html" css:if-content="body.template-search" />
   <theme href="post.html" css:if-content="body.portaltype-news-item" />
   <theme href="info.html" if-path="info" />
   <theme href="article.html" if-path="article" />
@@ -49,6 +50,10 @@
          css:content-children="body.portaltype-news-item div#content-core" />
   <replace css:theme="div.fb-comments"
          css:content="div.fb-comments" />
+  <replace css:theme-children="ul.blog"
+         css:content-children="div#search-results-wrapper" />
+  <drop css:content="dl.actionMenu" />
+  <drop css:content="span#searchResultsSort" />
 
 </rules>
 
