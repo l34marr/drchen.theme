@@ -50,7 +50,7 @@
          css:content-children="body.portaltype-news-item div#content-core" />
   <replace css:theme="div.fb-comments"
          css:content="div.fb-comments" />
-  <replace css:theme-children="ul.blog"
+  <replace css:theme-children="div#search-results-wrapper"
          css:content-children="div#search-results-wrapper" />
   <drop css:content="dl.actionMenu" />
   <drop css:content="span#searchResultsSort" />
