@@ -33,9 +33,9 @@ table {
 	border-collapse: collapse;
 	/*border-spacing: 0;*/
 }
-caption, th, td {
+caption, td {
 	text-align: left;
-	font-weight: normal;
+	/*font-weight: normal;*/
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
