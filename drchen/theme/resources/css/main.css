@@ -12,6 +12,14 @@
   font-family: "微軟正黑體", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 180%;
 }
+/* post_content */
+#parent-fieldname-text .callout {
+  padding: 8px;
+  margin-bottom: 10px;
+  border-left: 1em solid #CCC;
+  clear: both;
+}
+
 @media screen and (max-width:1009px)
 {
 .justfont1, .justfont2 {
